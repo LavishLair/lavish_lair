@@ -1,0 +1,18 @@
+body { 
+    background-color: rgb(239, 239, 174);
+    margin: 40px;
+    
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: medium;
+ 
+}
+
+.subnav {
+    background-color: skyblue;
+    font-family: Arial;
+    overflow: hidden;
+  }
+
+  a{
+    color: black;
+  }

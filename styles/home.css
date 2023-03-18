@@ -1,0 +1,16 @@
+#home {
+    margin-top: 5rem;
+}
+
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 83vh;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+#welcome-message {
+    z-index: 5;
+}

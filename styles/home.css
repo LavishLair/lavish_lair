@@ -1,16 +1,97 @@
 #home {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .header-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    height: 83vh;
-    width: 100%;
-    top: 0;
-    z-index: -1;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 83vh;
+  width: 100%;
+  top: 0;
+  z-index: -1;
 }
 
 #welcome-message {
-    z-index: 5;
+  z-index: 5;
+}
+
+.secondary-menu-container {
+  display: flex;
+  /* justify-content: space-between; */
+  /* margin-top: 5rem; */
+  justify-content: center;
+}
+
+.menu-box1 {
+  border: 1px solid rgb(214, 210, 210);
+  border-radius: 5px;
+  padding: 3rem;
+  margin: 9rem 3rem;
+  height: 125px;
+  width: 125px;
+}
+.menu-box1 p {
+  font-size: x-small;
+  color: black;
+  text-align: center;
+  align-self: center;
+}
+
+.menu-box1:hover {
+  cursor: pointer;
+  box-shadow: 0 0em 3em rgb(214, 210, 210), 0 0 2px rgb(214, 210, 210),
+    0.3em 0.3em 1em rgb(214, 210, 210);
+}
+
+.hotel-brief {
+  background-color: rgb(241, 241, 241);
+  width: 60%;
+  margin: auto;
+  padding: 12rem;
+  margin-bottom: 5rem;
+}
+
+.hotel-brief h2 {
+  text-align: center;
+}
+.hotel-brief p {
+  font-size: small;
+  text-align: center;
+}
+
+.slide-card img {
+  height: 200px;
+  width: 350px;
+}
+
+.room-slide {
+  display: flex;
+  margin: 9rem 0;
+  justify-content: space-evenly;
+  gap: 30px;
+  overflow: scroll;
+}
+
+.slide-card {
+  border: 1px solid rgb(214, 210, 210);
+}
+.slide-card h3 {
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  padding: 4rem 0;
+  line-height: 30px;
+}
+
+.slide-card p {
+  text-align: center;
+  font-size: small;
+  width: 85%;
+  margin: auto;
+  margin-top: -2rem;
+}
+
+.button-section {
+  width: 60%;
+  margin: auto;
 }

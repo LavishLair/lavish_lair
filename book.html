@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking Information</title>
+        <link rel="stylesheet" href="styles/book.css">
+        <link rel="stylesheet" href="styles/Common.css">
+    </head>
+<form id="customer info" method="post">
+    <fieldset>
+        <legend>Booking Information</legend>
+
+        <label for="name">Name *</label> 
+        <input type="text" id="name" placeholder="First and last name" required>
+        <br><br>
+       
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="nnn-nnn-nnnn">
+        <br><br>
+        <label for="email">Email *</label>
+        <input type="email" id="email" required>
+        <br><br>
+        <label for="Property type">Property type</label>
+                <select id="Property type">
+                    <option>Delux Room</option>
+                    <option>Premier Room</option>
+                    <option>Delux Suit</option>
+                    <option>Premier Suit</option>
+                </select> 
+        <br><br>
+        <label for="date">Check-in Date</label>
+                <input type="date" id="date">
+
+                <label for="date">check-out Date</label>
+                <input type="date" id="date">
+        <br><br>
+                <label for="address">Billing address</label>
+                <input type="text" id="address" >
+                <br><br>
+
+                <label for="payment">Credit/Debit Card Number</label>
+                <input type="text" id="payment" >
+                <br><br>
+
+                <label for="cardholder">Card Holder Name</label>
+                <input type="text" id="payment">
+                <br><br>
+
+                <input type="submit" id="submit" value="Confirm Booking">
+
+</fieldset>
+</form>
+</html>

@@ -15,7 +15,7 @@
 			<header id="lavish-header-section">
 				<div class="container">
 					<div class="nav-header">
-						<h1 id="lavish-logo"><a href="index.html">Lavish Lair</a></h1>
+						<a href="index.html" class="navbar-brand"><img src="images/logo-white.png" alt=""></a>
 						<nav id="lavish-menu-wrap" role="navigation">
 							<ul class="header-menu" id="lavish-primary-menu">
 								<li><a href="index.html">Home</a></li>
@@ -30,6 +30,7 @@
 								</li>
 								<li><a href="services.html">Services</a></li>
 								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact-us.html">Contact Us</a></li>
 								<li><a class="active" href="contact-us.html">About Us</a></li>
 							</ul>
 						</nav>
@@ -51,7 +52,7 @@
 		</div>
 		<div id="lavish-about-us">
             <div class="container">
-                <div class="feature-full-1col">
+                <div class="aboutus-feature">
 					<div class="image" style="background-image: url(images/about1.jpg);">
 						
 					</div>
@@ -69,9 +70,9 @@
 				</div>
                 
                           
-                <div class="row">
+                <div class="aboutus-feature">
                     
-                    <div class="col-md-6">
+                    <div class="desc">
                         <h3 class="heading">WHAT WE BELIEVE</h3>
                         <p>Our greatest asset, and the key to our success, is our people. 
                             We believe that each of us needs a sense of dignity, pride and 
@@ -80,16 +81,14 @@
                             together cooperatively, respecting each other’s contribution and 
                             importance.</p>
                     </div>
-                    <div class="col-md-6">
-                        <img src="images/about2.jpg" class="img-responsive about-img" alt="Image">
+					<div class="image" style="background-image: url(images/about2.jpg);">
                     </div>
                 </div>
                           
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="images/about3.jpg" class="img-responsive about-img" alt="Image">
+				<div class="aboutus-feature">
+					<div class="image" style="background-image: url(images/about3.jpg);">
                     </div>
-                    <div class="col-md-6">
+                    <div class="desc">
                         <h3 class="heading">HOW WE SUCCEED</h3>
                         <p>We succeed when every decision is based on a clear understanding of and 
                             belief in what we do, and when we couple this conviction with sound 
@@ -99,17 +98,16 @@
                     </div>
                 </div>
                           
-                <div class="row">
+                <div class="aboutus-feature">
                     
-                    <div class="col-md-6">
+					<div class="desc">
                         <h3 class="heading">HOW WE BEHAVE</h3>
                         <p>We demonstrate our beliefs most meaningfully in the way we treat each 
                             other and by the example we set for one another. In all our interactions 
                             with our guests, customers, business associates and colleagues, we seek 
                             to deal with others as we would have them deal with us.</p>
                     </div>
-                    <div class="col-md-6">
-                        <img src="images/about4.jpg" class="img-responsive about-img" alt="Image">
+                    <div class="image" style="background-image: url(images/about4.jpg);">
                     </div>
                 </div>
             </div>
@@ -168,7 +166,8 @@
 
 <style>
     #lavish-about-us{
-        padding: 7em 0;
+        padding-bottom: 7em;
+		padding-top: 1em;
     }
     .img-responsive {
         display: block;
@@ -176,7 +175,7 @@
         height: auto;
     }
     
-    .feature-full-1col {
+    .aboutus-feature {
         display: flex;
         flex-flow: row wrap;
         width: 100%;
@@ -184,7 +183,7 @@
         height: 500px;
         padding: 60px;
     }
-    .feature-full-1col .image {
+    .aboutus-feature .image {
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
@@ -192,17 +191,31 @@
         overflow: hidden;
     }
     
-    .feature-full-1col .image, .feature-full-1col .desc {
+    .aboutus-feature .image, .aboutus-feature .desc {
         float: left;
         width: 50%;
         height: 500px;
     }
-    .feature-full-1col .desc {
+    .aboutus-feature .desc {
         padding: 50px;
         background: #f5f5f5;
         font-style: italic;
     }
-    .feature-full-1col .desc p{
+    .aboutus-feature .desc p{
         font-size: 16px;
     }
+
+	#lavish-header-section .container {
+		margin: auto;
+	}
+	.container .navbar-brand {
+		position: relative;
+		padding: 0;
+	}
+	.navbar-brand img {
+    	height: 160px;
+	}
+	.nav-header{
+		display: flex;
+	}
 </style>

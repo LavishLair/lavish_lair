@@ -1,6 +1,10 @@
+
 let slideIndex = 1;
- 
-showSlides(slideIndex);
+
+// Call showSlides() after the page has loaded
+window.addEventListener("load", function() {
+  showSlides(slideIndex);
+});
 
 // Next/previous controls
 function plusSlides(n) {
@@ -16,15 +20,24 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  
+  // Hide all the slides
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   
+  // Show only the first slide
   slides[slideIndex-1].style.display = "block";
-
 }
+
+
+
 
 
 

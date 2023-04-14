@@ -1,0 +1,10 @@
+.deluxsuitecenter1{
+    width: 70%;
+     margin: auto;
+  }
+  
+  .deluxsuitecontent1 a :hover{
+      background-color: black;
+      color: white;
+      
+    }

@@ -1,0 +1,10 @@
+.deluxroomcenter1{
+    width: 70%;
+     margin: auto;
+  }
+  
+  .deluxroomcontent1 a :hover{
+      background-color: black;
+      color: white;
+      
+    }

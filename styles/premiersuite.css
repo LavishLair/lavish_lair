@@ -1,0 +1,10 @@
+.premiersuitecenter1{
+    width: 70%;
+     margin: auto;
+  }
+  
+  .premiersuitecontent1 a :hover{
+      background-color: black;
+      color: white;
+      
+    }

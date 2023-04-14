@@ -1,0 +1,10 @@
+.premierroomcenter1{
+    width: 70%;
+     margin: auto;
+  }
+  
+  .premierroomcontent1 a :hover{
+      background-color: black;
+      color: white;
+      
+    }

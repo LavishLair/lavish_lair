@@ -2,51 +2,51 @@ a{
     color: black;
     text-decoration: none;
   }
-  .deluxsuiteimg{
+  .deluxroomimg{
     align: left;
     
     
   }
   
-  .borderimg3{
+  .borderimg1{
     border-style: outset;
     border-width: medium;
     display: flex;
   }
   
-  .contantimg3{
+  .contantimg1{
     padding-left: 10px;
   }
   
-  .premiersuiteimg{
+  .premierroomimg{
     align: left;
   }
   
-  .borderimg4{
+  .borderimg2{
     border-style: outset;
     border-width: medium;
     display: flex;
   }
   
-  .contantimg4{
+  .contantimg2{
     padding-left: 10px;
   }
   
-  .contantimg3 a :hover{
+  .contantimg1 a :hover{
      background-color: black;
      
   }
   
-  .contantimg3 a :hover{
+  .contantimg1 a :hover{
     color: white;
   }
   
-  .contantimg4 a :hover{
+  .contantimg2 a :hover{
     background-color: black;
     
   }
   
-  .contantimg4 a :hover{
+  .contantimg2 a :hover{
    color: white;
   }
 

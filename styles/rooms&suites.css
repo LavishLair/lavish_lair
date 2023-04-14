@@ -1,18 +1,225 @@
-body { 
-    background-color: rgb(239, 239, 174);
-    margin: 40px;
-    
-    font-family: Arial, Helvetica, sans-serif ;
-    font-size: medium;
- 
+a{
+  color: black;
+  text-decoration: none;
+}
+.black{
+  color: black !important;
+}
+/* .a :hover{
+  color: black !important;
+} */
+ /*.deluxroomimg{
+  align: left;
+  
+  
+}*/
+
+.borderimg1{
+  border-style: outset;
+  border-width: medium;
+  display: flex;
 }
 
-.subnav {
-    background-color: skyblue;
-    font-family: Arial;
-    overflow: hidden;
-  }
+.contantimg1{
+  padding-left: 10px;
+}
 
-  a{
-    color: black;
-  }
+.premierroomimg{
+  align: left;
+}
+
+.borderimg2{
+  border-style: outset;
+  border-width: medium;
+  display: flex;
+}
+
+.contantimg2{
+  padding-left: 10px;
+}
+
+.contantimg1 a :hover{
+   background-color: black;
+   color: white;
+   
+}
+
+
+.contantimg2 a :hover{
+  background-color: black;
+  color: white;
+  
+}
+
+.deluxsuiteimg{
+  align: left;
+  
+  
+}
+
+.borderimg3{
+  border-style: outset;
+  border-width: medium;
+  display: flex;
+}
+
+.contantimg3{
+  padding-left: 10px;
+}
+
+.premiersuiteimg{
+  align: left;
+}
+
+.borderimg4{
+  border-style: outset;
+  border-width: medium;
+  display: flex;
+}
+
+.contantimg4{
+  padding-left: 10px;
+}
+
+.contantimg3 a :hover{
+   background-color: black;
+   
+}
+
+.contantimg3 a :hover{
+  color: white;
+}
+
+.contantimg4 a :hover{
+  background-color: black;
+  
+}
+
+.contantimg4 a :hover{
+ color: white;
+}
+
+
+
+
+
+
+
+
+
+/* image slider 1*/
+
+
+* {box-sizing:border-box}
+
+
+.deluxroomimg {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+.mySlides {
+  
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+/* image slider2 */
+
+
+/* * {box-sizing:border-box}
+ */
+
+/* .premierroomimg {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+.mySlides1 {
+  
+}
+
+
+.prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next1{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev1:hover, .next1:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ */
+/* @keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+} */

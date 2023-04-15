@@ -125,8 +125,16 @@ a{
   
 }
 
+.slide-button{
+  justify-content: space-between;
+    display: flex;
+}
 
-.prev, .next {
+/* .next{
+  padding: 40px;
+} */
+
+/* .prev1, .next1 {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -140,12 +148,17 @@ a{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+ .next1 {
+  margin-left: 460px;
+  
+ } */
 
+ 
 
-.next {
+/* .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
+} */
 
 
 .prev:hover, .next:hover {

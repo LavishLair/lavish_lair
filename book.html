@@ -6,7 +6,9 @@
             <link rel="stylesheet" href="styles/style.css">
             <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/themify-icons.css" />
-    <script src="Js/book.js"></script>
+    <!-- <script src="Js/book.js"></script> -->
+
+   
 
 
     </head>
@@ -37,7 +39,105 @@
           </div>
         </header>
       </div> 
-      <div class="container">
+
+      <div class="book-form">
+      <form id="customer-info" method="post">
+        <fieldset>
+            <legend>Booking Information</legend>
+    
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" placeholder="First and last name" required>
+            <br><br>
+    
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="nnn-nnn-nnnn">
+            <br><br>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="Property type">Property type</label>
+            <select id="PropertyType" name="property">
+                <option>Delux Room</option>
+                <option>Premier Room</option>
+                <option>Delux Suit</option>
+                <option>Premier Suit</option>
+            </select>
+            <br><br>
+            <label for="date">Check-in Date</label>
+            <input type="date" id="date" name="check-in-date">
+    
+            <label for="date">check-out Date</label>
+            <input type="date" id="date" name="check-out-date">
+            <br><br>
+            <label for="address">Billing address</label>
+            <input type="text" name="address" id="address">
+            <br><br>
+    
+            <label for="payment">Credit/Debit Card Number</label>
+            <input type="text" name="payment" id="payment">
+            <br><br>
+    
+            <label for="cardholder">Card Holder Name</label>
+            <input type="text" name="cardholder" id="payment">
+            <br><br>
+    
+            <input type="submit" id="submit" value="Confirm Booking">
+    
+        </fieldset>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('customer-info'); // get the form element
+    const submitBtn = form.querySelector('input[type="submit"]'); // get the submit button element
+
+    submitBtn.addEventListener('click', function (event) {
+        event.preventDefault(); // prevent form submission
+
+        // get form values
+        const name = form.querySelector('input[name="name"]').value;
+        const email = form.querySelector('input[name="email"]').value;
+        const phone = form.querySelector('input[name="phone"]').value;
+        // const property = form.querySelector('input[name="property"]').value;
+        const checkInDate = form.querySelector('input[name="check-in-date"]').value;
+        const checkOutDate = form.querySelector('input[name="check-out-date"]').value;
+        const address = form.querySelector('input[name="address"]').value;
+        const payment = form.querySelector('input[name="payment"]').value;
+        const cardholder = form.querySelector('input[name="cardholder"]').value;
+        // const message = form.querySelector('textarea[name="message"]').value;
+        let dropdown = document.getElementById("PropertyType");
+        let property = dropdown.value;
+
+        // store form values in an object
+        const formData = {
+            name: name,
+            email: email,
+            phone: phone,
+            property: property,
+            checkInDate: checkInDate,
+            checkOutDate: checkOutDate,
+            address: address,
+            payment: payment,
+            cardholder: cardholder
+            // message: message
+        };
+
+        // Retrieve the existing data from local storage (if any)
+        const formDataString = localStorage.getItem('formData');
+
+        // Parse the existing data into an array (or create a new array if there is none)
+        const formDataArray = formDataString ? JSON.parse(formDataString) : [];
+        formDataArray.push(formData);
+        const updatedFormDataString = JSON.stringify(formDataArray);
+
+        // Save the updated string back to local storage
+        localStorage.setItem('formData', updatedFormDataString);
+        const formDataStringD = localStorage.getItem('formData');
+        console.log(formDataStringD);
+    });
+</script>
+
+      <!-- <div class="container">
       <div class="book-form">
 <form id="customer info" method="post">
     <fieldset>
@@ -84,7 +184,7 @@
 </fieldset>
 </form>
 </div>
-</div>
+</div> -->
 <!-- <div class="lavish-footer"> -->
 <footer id="footer" class="lavish-bg-color">
     <div class="container">

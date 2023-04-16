@@ -129,6 +129,31 @@ a{
   justify-content: space-between;
     display: flex;
 }
+.borderimg{
+  box-shadow: 10px 10px 5px;
+}
+.borderimg:hover{
+  transform: scale(1.01);
+}
+.box-rooms{
+  margin: 50px 0px;
+}
+.text-area{
+  margin: 30px;
+}
+.justify{
+  text-align: justify;
+}
+.container .navbar-brand {
+  position: relative;
+  padding: 0;
+}
+.navbar-brand img {
+    height: 160px;
+}
+.nav-header{
+  display: flex;
+}
 
 /* .next{
   padding: 40px;

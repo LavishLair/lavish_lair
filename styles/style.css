@@ -529,14 +529,14 @@ body {
   overflow-x: hidden;
 }
 a {
-  color: #FF5722;
+  color: black;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: none !important;
-  color: #FF5722 !important;
+  color: black !important;
 }
 p, ul, ol {
   margin-bottom: 1.5em;

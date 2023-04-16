@@ -22,10 +22,12 @@
 
 <!-- <div class="room-suites"> -->
       <div id="lavish-header">
-        <header id="lavish-header-section">
+        <!-- <header id="lavish-header-section">
           <div class="container">
             <div class="nav-header">
-              <h1 id="lavish-logo"><a href="index.html">Lavish Lair</a></h1>
+						<a href="index.html" class="navbar-brand"><img src="images/logo-white.png" alt=""></a>
+
+              
               <nav id="lavish-menu-wrap" role="navigation">
                 <ul class="header-menu" id="lavish-primary-menu">
                   <li><a href="index.html">Home</a></li>
@@ -45,6 +47,32 @@
               </nav>
             </div>
           </div>
+        </header> -->
+        <header id="lavish-header-section">
+          <div class="container">
+            <div class="nav-header">
+              
+              <a href="index.html" class="navbar-brand"><img src="images/logo-white.png" alt=""></a>
+              <nav id="lavish-menu-wrap" role="navigation">
+                <ul class="header-menu" id="lavish-primary-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li>
+                    <a href="/Rooms&suites.html" class="lavish-sub-ddown">Rooms and Suites</a>
+                    <ul class="lavish-sub-menu">
+                      <li><a href="#">Luxury Hotel</a></li>
+                      <li><a href="#">Deluxe Hotel</a></li>
+                      <li><a href="#" class="lavish-sub-ddown">Main Hotel</a></li>
+                      <li><a href="#">Five Star Hotel</a></li> 
+                    </ul>
+                  </li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <li><a class="active" href="contact-us.html">About Us</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </header>
       </div> 
 
@@ -59,6 +87,7 @@
             
         </div>
 <div class="container">
+  <div class="box-rooms">
 
         <!-- <h1>Rooms</h1> -->
         <!-- <p>Our stylish and well-appointed Guest Rooms offer the very best in comfort and privacy, while providing a peaceful retreat in which to relax and unwind throughout your stay.</p> -->
@@ -67,7 +96,7 @@
            <a href="Deluxroom.html" class="black">Delux Room</a>
           </h3>
 
-        <div class="borderimg1">
+        <div class="borderimg borderimg1">
            <div class="deluxroomimg">
 
             <div class="slider">
@@ -117,8 +146,8 @@
 
 
           
-           <div class="contantimg1">
-                <p>Enjoy the relaxing 35 sq m contemporary room with a plush king bed, work area with enhanced lighting and high-speed Internet access.  Maximum guests per room: 2 adults / 1 child</p>
+           <div class="text-area contantimg1">
+                <p class="justify">Enjoy the relaxing 35 sq m contemporary room with a plush king bed, work area with enhanced lighting and high-speed Internet access.  Maximum guests per room: 2 adults / 1 child</p>
                 <a href="Deluxroom.html"><input type="button" id="deluxroom" value="More Details"></a> &nbsp;
                 <a href="book.html"><input type="button" id="Book" value="Book Now"></a>
            </div>
@@ -126,7 +155,7 @@
 
         <h3><a href="Premierroom.html" class="black">Premier Room</a></h3>
 
-        <div class="borderimg2">
+        <div class=" borderimg borderimg2">
         <div class="premierroomimg">
 
          
@@ -174,8 +203,8 @@
 
        
         
-            <div class="contantimg2">
-                <p>Enjoy stunning views of river from a stylish 36-square-metre room offering plush king-size bed and work area with enhanced lighting. Maximum guests per room: 2 adults / 1 child</p>
+            <div class="text-area contantimg2">
+                <p class="justify">Enjoy stunning views of river from a stylish 36-square-metre room offering plush king-size bed and work area with enhanced lighting. Maximum guests per room: 2 adults / 1 child</p>
                 <a href="premierroom.html"><input type="button" id="deluxroom" value="More Details"></a> &nbsp;
                 <a href="book.html"><input type="button" id="Book" value="Book Now"></a>
             </div>
@@ -183,7 +212,7 @@
 
         <h3><a href="Deluxsuite.html"  class="black">Delux Suite</a></h3>
         
-        <div class="borderimg3">
+        <div class="borderimg borderimg3">
             <div class="deluxsuiteimg">
 
 
@@ -227,8 +256,8 @@
             <!-- <a href="Deluxsuite.html"><img src="images/Deluxsuite1.jpg" height="250" width="500"></a> -->
             </div>
             
-            <div class="contantimg3"> 
-           <p>Magnificent city views welcome you to a 73-square-metre suite offering spacious living area, Shower and bathtub cubicle, king-size bed and two-way airport transfers. Maximum guests per room: 3 This is a standard suite.</p>
+            <div class="text-area contantimg3"> 
+           <p class="justify">Magnificent city views welcome you to a 73-square-metre suite offering spacious living area, Shower and bathtub cubicle, king-size bed and two-way airport transfers. Maximum guests per room: 3 This is a standard suite.</p>
                 <a href="Deluxsuite.html"><input type="button" id="deluxsuite" value="More Details"></a> &nbsp;
                 <a href="book.html"><input type="button" id="Book" value="Book Now"></a>
             </div>
@@ -237,7 +266,7 @@
         <h3><a href="Premiersuite.html" class="black
           ">Premier Suite</a></h3>
 
-        <div class="borderimg4">
+        <div class="borderimg borderimg4">
             <div class="premiersuiteimg">
 
               <div class="slider">
@@ -281,12 +310,13 @@
             <!-- <a href="Premiersuite.html"><img src="images/Premiersuite1.jpg" height="250" width="500"></a> -->
             </div>
 
-            <div class="contantimg4">
-               <p>A sophisticated 80 sq m suite with king bed, separate living area, walk-in wardrobe, and deluxe bathroom with soaking tub, rain shower, double vanity and glass shower cubical. The suite features contemporary interiors with beautiful artefacts, designer furniture, and interiors in pastel shades.   Maximum guests per room: 3 This is a standard suite.</p>
+            <div class="text-area contantimg4">
+               <p class="justify">A sophisticated 80 sq m suite with king bed, separate living area, walk-in wardrobe, and deluxe bathroom with soaking tub, rain shower, double vanity and glass shower cubical. The suite features contemporary interiors with beautiful artefacts, designer furniture, and interiors in pastel shades.   Maximum guests per room: 3 This is a standard suite.</p>
                 <a href="premiersuite.html"><input type="button" id="premiersuite" value="More Details"></a> &nbsp;
                 <a href="book.html"><input type="button" id="Book" value="Book Now"></a>
             </div>
             </div>
+          </div>
           </div>
 
 

@@ -8,3 +8,13 @@
       color: white;
       
     }
+    .container .navbar-brand {
+      position: relative;
+      padding: 0;
+    }
+    .navbar-brand img {
+        height: 160px;
+    }
+    .nav-header{
+      display: flex;
+    }

@@ -1,0 +1,20 @@
+.premiersuitecenter1{
+    width: 70%;
+     margin: auto;
+  }
+  
+  .premiersuitecontent1 a :hover{
+      background-color: black;
+      color: white;
+      
+    }
+    .container .navbar-brand {
+      position: relative;
+      padding: 0;
+    }
+    .navbar-brand img {
+        height: 160px;
+    }
+    .nav-header{
+      display: flex;
+    }

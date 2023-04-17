@@ -125,8 +125,41 @@ a{
   
 }
 
+.slide-button{
+  justify-content: space-between;
+    display: flex;
+}
+.borderimg{
+  box-shadow: 10px 10px 5px;
+}
+.borderimg:hover{
+  transform: scale(1.01);
+}
+.box-rooms{
+  margin: 50px 0px;
+}
+.text-area{
+  margin: 30px;
+}
+.justify{
+  text-align: justify;
+}
+.container .navbar-brand {
+  position: relative;
+  padding: 0;
+}
+.navbar-brand img {
+    height: 160px;
+}
+.nav-header{
+  display: flex;
+}
 
-.prev, .next {
+/* .next{
+  padding: 40px;
+} */
+
+/* .prev1, .next1 {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -140,12 +173,17 @@ a{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+ .next1 {
+  margin-left: 460px;
+  
+ } */
 
+ 
 
-.next {
+/* .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
+} */
 
 
 .prev:hover, .next:hover {

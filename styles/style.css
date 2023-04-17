@@ -532,14 +532,14 @@ body {
   overflow-x: hidden;
 }
 a {
-  color: #FF5722;
+  color: black;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: none !important;
-  color: #FF5722 !important;
+  color: black !important;
 }
 p, ul, ol {
   margin-bottom: 1.5em;
@@ -551,7 +551,7 @@ p, ul, ol {
 h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.7);
   font-weight: 400;
-  margin: 0 0 30px 0;
+  margin: 30px 0 30px 0;
 }
 ::selection {
   color: #fcfcfc;

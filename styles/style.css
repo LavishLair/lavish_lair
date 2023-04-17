@@ -62,6 +62,9 @@ html {
 body {
   margin: 0;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 article,aside,details,footer,header,main,menu,nav,section,summary {
   display: block;
 }

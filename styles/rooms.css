@@ -1,0 +1,55 @@
+a{
+    color: black;
+    text-decoration: none;
+  }
+  .deluxroomimg{
+    align: left;
+    
+    
+  }
+  
+  .borderimg1{
+    border-style: outset;
+    border-width: medium;
+    display: flex;
+  }
+  
+  .contantimg1{
+    padding-left: 10px;
+  }
+  
+  .premierroomimg{
+    align: left;
+  }
+  
+  .borderimg2{
+    border-style: outset;
+    border-width: medium;
+    display: flex;
+  }
+  
+  .contantimg2{
+    padding-left: 10px;
+  }
+  
+  .contantimg1 a :hover{
+     background-color: black;
+     
+  }
+  
+  .contantimg1 a :hover{
+    color: white;
+  }
+  
+  .contantimg2 a :hover{
+    background-color: black;
+    
+  }
+  
+  .contantimg2 a :hover{
+   color: white;
+  }
+
+  .black{
+    color: black;
+  }

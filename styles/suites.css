@@ -1,12 +1,86 @@
-body { 
-   
-    margin: 40px;
-    
-    font-family: Arial, Helvetica, sans-serif ;
-    font-size: medium;
- 
-}
-
-a {
+a{
     color: black;
-}
+    text-decoration: none;
+  }
+  .deluxsuiteimg{
+    align: left;
+    
+    
+  }
+  
+  .borderimg3{
+    border-style: outset;
+    border-width: medium;
+    display: flex;
+  }
+  
+  .contantimg3{
+    padding-left: 10px;
+  }
+  
+  .premiersuiteimg{
+    align: left;
+  }
+  
+  .borderimg4{
+    border-style: outset;
+    border-width: medium;
+    display: flex;
+  }
+  
+  .contantimg4{
+    padding-left: 10px;
+  }
+  
+  .contantimg3 a :hover{
+     background-color: black;
+     
+  }
+  
+  .contantimg3 a :hover{
+    color: white;
+  }
+  
+  .contantimg4 a :hover{
+    background-color: black;
+    
+  }
+  
+  .contantimg4 a :hover{
+   color: white;
+  }
+
+  .black{
+    color: black;
+  }
+
+  .slide-button{
+    justify-content: space-between;
+      display: flex;
+  }
+
+  .borderimg{
+    box-shadow: 10px 10px 5px;
+  }
+  .borderimg:hover{
+    transform: scale(1.01);
+  }
+  .box-rooms{
+    margin: 50px 0px;
+  }
+  .text-area{
+    margin: 30px;
+  }
+  .justify{
+    text-align: justify;
+  }
+  .container .navbar-brand {
+    position: relative;
+    padding: 0;
+  }
+  .navbar-brand img {
+      height: 160px;
+  }
+  .nav-header{
+    display: flex;
+  }

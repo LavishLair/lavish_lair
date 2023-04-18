@@ -1,0 +1,22 @@
+.book-form{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.book-box{
+    background-color: #80808030;
+    margin: 200px 30px;
+}
+.submit{
+    background-color: #80808094;
+    color: black;
+}
+.container .navbar-brand {
+    position: relative;
+    padding: 0;
+  }
+  .navbar-brand img {
+      height: 160px;
+  }
+  .nav-header{
+    display: flex;
+  }

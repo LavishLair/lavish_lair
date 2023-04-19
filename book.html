@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Booking Information</title>
-        <link rel="stylesheet" href="styles/book.css">
-            <link rel="stylesheet" href="styles/style.css">
-            <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/themify-icons.css" />
-    <!-- <script src="Js/book.js"></script> -->
 
-   
+<head>
+  <title>Booking Information</title>
+  <link rel="stylesheet" href="styles/book.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/themify-icons.css" />
+  <!-- <script src="Js/book.js"></script> -->
 
 
-    </head>
-    <div class="container-fluid">
-    <div id="lavish-header">
-        <header id="lavish-header-section">
-          <div class="container">
-            <div class="nav-header">
-              <h1 id="lavish-logo"><a href="index.html"><img src="images/logo-white.png" class="llLogo" alt=""></a></h1>
-              <!-- <h1 id="lavish-logo"><a href="index.html">Lavish Lair</a></h1> -->
-              <nav id="lavish-menu-wrap" role="navigation">
-                <ul class="header-menu" id="lavish-primary-menu">
-                  <li><a href="index.html">Home</a></li>
-                  <li>
-                    <a href="/Rooms&suites.html" class="lavish-sub-ddown">Rooms and Suites</a>
-                  </li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="/about-us.html">About</a></li>
-                  <li><a href="contact-us.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </header>
-      </div> 
 
-      <div class="book-form">
+
+</head>
+<div class="container-fluid">
+  <div id="lavish-header">
+    <header id="lavish-header-section">
+      <div class="container">
+        <div class="nav-header">
+          <h1 id="lavish-logo"><a href="index.html"><img src="images/logo-white.png" class="llLogo" alt=""></a></h1>
+          <!-- <h1 id="lavish-logo"><a href="index.html">Lavish Lair</a></h1> -->
+          <nav id="lavish-menu-wrap" role="navigation">
+            <ul class="header-menu" id="lavish-primary-menu">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="/Rooms&suites.html" class="lavish-sub-ddown">Rooms and Suites</a>
+              </li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="/about-us.html">About</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- <div class="book-form">
       <form id="customer-info" method="post">
         <fieldset class="book-box">
             <legend>Booking Information</legend>
@@ -80,64 +81,313 @@
     
         </fieldset>
     </form>
-  </div>
-  <script>
-    function confirmation() {
-      confirm("Booking has been confirmed !!")
-    }
-  </script>
+  </div> -->
 
-  <script>
-    const form = document.getElementById('customer-info'); // get the form element
-    const submitBtn = form.querySelector('input[type="submit"]'); // get the submit button element
 
-    submitBtn.addEventListener('click', function (event) {
-        event.preventDefault(); // prevent form submission
+  <section class="contact-us">
+    <div class="container contactUs-sec">
+      <div class="row">
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2"></div>
+        <div class="col-8 col-sm-8 col-md-8 col-lg-8 contact-details">
+          <h2>Booking Information</h2>
+          <div class="row">
+            <form class="row g-5" id="customer-info">
+              <div class="col-12 col-sm-12 col-md-12">
+                <div class="mb-3">
+                  <div class="d-flex">
+                    <div class="wrap-input100 validate-input">
+                      <input class="input100 has-val" placeholder="name" type="text" name="name" required />
+                      <span class="focus-input100"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <div class="d-flex">
+                    <div class="wrap-input100 validate-input">
+                      <input class="input100 has-val" placeholder="Card Holder Name" type="text" name="cardholder"
+                        required />
+                      <span class="focus-input100"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 field">
+                <div class="mb-3">
+                  <div class="d-flex">
+                    <div class="wrap-input100 validate-input">
+                      <input class="input100 has-val" placeholder="Email Id" type="text" name="email" required />
+                      <span class="focus-input100"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 field">
+                <div class="mb-3">
+                  <div class="d-flex">
+                    <div class="wrap-input100 validate-input">
+                      <input class="input100 has-val" placeholder="Contact Number" type="number" name="phone"
+                        required />
+                      <span class="focus-input100"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 field">
+                <div class="mb-3">
+                  <div class="d-flex">
+                    <div class="wrap-input100 validate-input">
+                      <input class="input100 has-val" placeholder="Billing Address" type="text" name="address"
+                        required />
+                      <span class="focus-input100"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 field">
+                <div class="mb-3">
+                  <div class="d-flex">
+                    <div class="wrap-input100 validate-input">Check-in Date
+                      <input class="input100 has-val" placeholder="Check-in Date" type="date" name="check-in-date"
+                        required />
 
-        // get form values
-        const name = form.querySelector('input[name="name"]').value;
-        const email = form.querySelector('input[name="email"]').value;
-        const phone = form.querySelector('input[name="phone"]').value;
-        // const property = form.querySelector('input[name="property"]').value;
-        const checkInDate = form.querySelector('input[name="check-in-date"]').value;
-        const checkOutDate = form.querySelector('input[name="check-out-date"]').value;
-        const address = form.querySelector('input[name="address"]').value;
-        const payment = form.querySelector('input[name="payment"]').value;
-        const cardholder = form.querySelector('input[name="cardholder"]').value;
-        // const message = form.querySelector('textarea[name="message"]').value;
-        let dropdown = document.getElementById("PropertyType");
-        let property = dropdown.value;
+                      <span class="focus-input100"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 field">
+                <div class="mb-3">
+                  <div class="d-flex">
+                    <div class="wrap-input100 validate-input"><Check-out></Check-out>Check-out Date
+                      <input class="input100 has-val" placeholder="Check-out Date" type="date" name="check-out-date"
+                        required />
 
-        // store form values in an object
-        const formData = {
-            name: name,
-            email: email,
-            phone: phone,
-            property: property,
-            checkInDate: checkInDate,
-            checkOutDate: checkOutDate,
-            address: address,
-            payment: payment,
-            cardholder: cardholder
-            // message: message
-        };
+                      <span class="focus-input100"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 field">
+                <div class="mb-3">
+                  <div class="d-flex">
+                    <div class="wrap-input100 validate-input"><Check-out></Check-out>
+                      <input class="input100 has-val" placeholder="Credit/Debit Card Number" type="text" name="payment"
+                        required />
 
-        // Retrieve the existing data from local storage (if any)
-        const formDataString = localStorage.getItem('formData');
+                      <span class="focus-input100"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 field">
+                <div class="mb-3">
+                  <div class="d-flex">
+                    <div class="wrap-input100 validate-input"><Check-out></Check-out>
 
-        // Parse the existing data into an array (or create a new array if there is none)
-        const formDataArray = formDataString ? JSON.parse(formDataString) : [];
-        formDataArray.push(formData);
-        const updatedFormDataString = JSON.stringify(formDataArray);
+                      <!-- <label for="Property type">Property type</label> -->
+                      <select id="property-type">
+                        <option>Delux Room</option>
+                        <option>Premier Room</option>
+                        <option>Delux Suit</option>
+                        <option>Premier Suit</option>
+                      </select>
 
-        // Save the updated string back to local storage
-        localStorage.setItem('formData', updatedFormDataString);
-        const formDataStringD = localStorage.getItem('formData');
-        console.log(formDataStringD);
-    });
+                      <span class="focus-input100"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="submit btn">
+                Confirm Booking
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2"></div>
+
+
+        <!-- <div class="col contact-details">
+          <div class="container details">
+            <div class="card c">
+              <div class="card-body card-info">
+                 <img src="./images/hotel.jpeg"/> 
+                <div class="container box">
+                  <div class="col-12 col-sm-6 col-md-6 name">
+                    <h5 class="info ">Contact Info</h5>
+                    <h5 class="data ">Malhar Mehta</h5>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 name">
+                      <h6 class="h6">Mobile Number</h6>
+                    </div>
+                    <div class="col-9 col-sm-12 col-md-9">
+                      <h6 class="data name"> +91 9723816597</h6>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col--12 col-sm-12 col-md-12 col-lg-3 name">
+                      <h6 class="h6">Email</h6>
+                    </div>
+                    <div class="col-9">
+                      <h6 class="data name"> malhar@bintech.services</h6>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col--12 col-sm-12 col-md-12 col-lg-3 name">
+                      <h6 class="h6">Address</h6>
+                    </div>
+                    <div class="col-9">
+                      <h6 class="data name">
+                        401, Samedh Complex <br />
+                        Panchwati Cross Road <br />
+                        Ahmedabad,380009 <br />
+                        Gujarat
+                      </h6>
+                    </div>
+                  </div>
+
+                  
+                </div> -->
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+  function confirmation() {
+    confirm("Booking has been confirmed !!")
+  }
 </script>
 
-      <!-- <div class="container">
+<script>
+  const form = document.getElementById('customer-info'); // get the form element
+  const submitBtn = form.querySelector('button[type="submit"]'); // get the submit button element
+
+  submitBtn.addEventListener('click', function (event) {
+    event.preventDefault(); // prevent form submission
+
+    // get form values
+    const name = form.querySelector('input[name="name"]').value;
+    const email = form.querySelector('input[name="email"]').value;
+    const phone = form.querySelector('input[name="phone"]').value;
+    // const property = form.querySelector('input[name="property"]').value;
+    const checkInDate = form.querySelector('input[name="check-in-date"]').value;
+    const checkOutDate = form.querySelector('input[name="check-out-date"]').value;
+    const address = form.querySelector('input[name="address"]').value;
+    const payment = form.querySelector('input[name="payment"]').value;
+    const cardholder = form.querySelector('input[name="cardholder"]').value;
+    // const message = form.querySelector('textarea[name="message"]').value;
+    let dropdown = document.getElementById("property-type");
+    let property = dropdown.value;
+
+    // store form values in an object
+    const formData = {
+      name: name,
+      email: email,
+      phone: phone,
+      property: property,
+      checkInDate: checkInDate,
+      checkOutDate: checkOutDate,
+      address: address,
+      payment: payment,
+      cardholder: cardholder
+      // message: message
+    };
+
+    // Retrieve the existing data from local storage (if any)
+    const formDataString = localStorage.getItem('formData');
+
+    // Parse the existing data into an array (or create a new array if there is none)
+    const formDataArray = formDataString ? JSON.parse(formDataString) : [];
+    formDataArray.push(formData);
+    const updatedFormDataString = JSON.stringify(formDataArray);
+
+    // Save the updated string back to local storage
+    localStorage.setItem('formData', updatedFormDataString);
+    const formDataStringD = localStorage.getItem('formData');
+    console.log(formDataStringD);
+  });
+</script>
+
+<footer id="footer" class="lavish-bg-color">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="copyright">
+          <p>
+            <small>&copy; 2023 Lavish Lair hotels <br />
+              All Rights Reserved. <br />
+              Designed by <b>Meenu Mathew</b></small>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Company</h3>
+            <ul class="link">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Customer Care</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Our Facilities</h3>
+            <ul class="link">
+              <li><a href="#">Resturant</a></li>
+              <li><a href="#">Bars</a></li>
+              <li><a href="#">Pick-up</a></li>
+              <li><a href="#">Swimming Pool</a></li>
+              <li><a href="#">Spa</a></li>
+              <li><a href="#">Gym</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3>Subscribe</h3>
+            <p>
+              Subscribe us to get notified about latest offers and events
+            </p>
+            <form action="#" id="form-subscribe">
+              <div class="form-field">
+                <input type="email" placeholder="Email Address" id="email" required />
+                <input type="submit" id="submit" value="Send" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="icon-twitter-with-circle"></i></a>
+            <a href="#"><i class="icon-facebook-with-circle"></i></a>
+            <a href="#"><i class="icon-instagram-with-circle"></i></a>
+            <a href="#"><i class="icon-linkedin-with-circle"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- </div>  -->
+</div>
+
+</html>
+
+
+
+<!-- backup code  -->
+
+<!-- <div class="container">
       <div class="book-form">
 <form id="customer info" method="post">
     <fieldset>
@@ -186,74 +436,3 @@
 </div>
 </div> -->
 <!-- <div class="lavish-footer"> -->
-<footer id="footer" class="lavish-bg-color">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="copyright">
-            <p>
-              <small
-                >&copy; 2023 Lavish Lair hotels <br />
-                All Rights Reserved. <br />
-                Designed by <b>Meenu Mathew</b></small
-              >
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-3">
-              <h3>Company</h3>
-              <ul class="link">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Hotels</a></li>
-                <li><a href="#">Customer Care</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h3>Our Facilities</h3>
-              <ul class="link">
-                <li><a href="#">Resturant</a></li>
-                <li><a href="#">Bars</a></li>
-                <li><a href="#">Pick-up</a></li>
-                <li><a href="#">Swimming Pool</a></li>
-                <li><a href="#">Spa</a></li>
-                <li><a href="#">Gym</a></li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <h3>Subscribe</h3>
-              <p>
-                Subscribe us to get notified about latest offers and events
-              </p>
-              <form action="#" id="form-subscribe">
-                <div class="form-field">
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    id="email"
-                    required
-                  />
-                  <input type="submit" id="submit" value="Send" />
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <ul class="social-icons">
-            <li>
-              <a href="#"><i class="icon-twitter-with-circle"></i></a>
-              <a href="#"><i class="icon-facebook-with-circle"></i></a>
-              <a href="#"><i class="icon-instagram-with-circle"></i></a>
-              <a href="#"><i class="icon-linkedin-with-circle"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-<!-- </div>  -->
-</div>
-</html>

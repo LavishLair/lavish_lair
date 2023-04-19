@@ -23,7 +23,7 @@
 									<a href="/Rooms&suites.html" class="lavish-sub-ddown">Rooms and Suites</a>
 								</li>
 								<li><a href="services.html">Services</a></li>
-								<li><a href="/about-us.html">About</a></li>
+								<li><a href="about-us.html">About</a></li>
 								<li><a class="active" href="contact-us.html">Contact</a></li>
 							</ul>
 						</nav>
@@ -71,17 +71,17 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Name" required>
+										<input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Email" required>
+										<input type="text" name="email" id="email" class="form-control" placeholder="Email" required>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea name="" class="form-control" id="" cols="30" rows="4" placeholder="Message"></textarea>
+										<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
 									</div>
 								</div>
 								<div class="col-md-12">
@@ -146,6 +146,7 @@
 	</main>
 </body>
 </html>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script>
 	$( document ).ready(function() {
@@ -154,8 +155,20 @@
 			event.preventDefault();
 		});
 		$( "#form-contactus" ).submit(function( event ) {
-			alert( "Your message sent successfully." );
+			
 			event.preventDefault();
+			const name = $('#name').val();
+			const email = $('#email').val();
+			const message = $('#message').val();
+			localStorage.setItem('name', name);
+			localStorage.setItem('email', email);
+			localStorage.setItem('message', message);
+			swal({
+				title: "Message sent successfully!",
+				text: name+" - "+message,
+				icon: "success",
+			});
+
 		});
 	});
 </script>

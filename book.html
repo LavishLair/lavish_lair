@@ -96,19 +96,11 @@
                 <div class="mb-3">
                   <div class="d-flex">
                     <div class="wrap-input100 validate-input">
-                      <input class="input100 has-val" placeholder="name" type="text" name="name" required />
+                      <input class="input100 has-val" placeholder="Name" type="text" name="name" required />
                       <span class="focus-input100"></span>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="mb-3">
-                  <div class="d-flex">
-                    <div class="wrap-input100 validate-input">
-                      <input class="input100 has-val" placeholder="Card Holder Name" type="text" name="cardholder"
-                        required />
-                      <span class="focus-input100"></span>
+                    <div class="validation-message">
+                      Please enter your name.
                     </div>
                   </div>
                 </div>
@@ -137,9 +129,16 @@
               <div class="col-md-12 field">
                 <div class="mb-3">
                   <div class="d-flex">
-                    <div class="wrap-input100 validate-input">
-                      <input class="input100 has-val" placeholder="Billing Address" type="text" name="address"
-                        required />
+                    <div class="wrap-input100 validate-input"><Check-out></Check-out>
+
+                      <!-- <label for="Property type">Property type</label> -->
+                      <select id="property-type" class="input100 has-val">
+                        <option>Delux Room</option>
+                        <option>Premier Room</option>
+                        <option>Delux Suite</option>
+                        <option>Premier Suite</option>
+                      </select>
+
                       <span class="focus-input100"></span>
                     </div>
                   </div>
@@ -172,6 +171,18 @@
               <div class="col-md-12 field">
                 <div class="mb-3">
                   <div class="d-flex">
+                    <div class="wrap-input100 validate-input">
+                      <input class="input100 has-val" placeholder="Billing Address" type="text" name="address"
+                        required />
+                      <span class="focus-input100"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col-md-12 field">
+                <div class="mb-3">
+                  <div class="d-flex">
                     <div class="wrap-input100 validate-input"><Check-out></Check-out>
                       <input class="input100 has-val" placeholder="Credit/Debit Card Number" type="text" name="payment"
                         required />
@@ -181,26 +192,23 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-12 field">
+              <div class="col-md-12">
                 <div class="mb-3">
                   <div class="d-flex">
-                    <div class="wrap-input100 validate-input"><Check-out></Check-out>
-
-                      <!-- <label for="Property type">Property type</label> -->
-                      <select id="property-type">
-                        <option>Delux Room</option>
-                        <option>Premier Room</option>
-                        <option>Delux Suit</option>
-                        <option>Premier Suit</option>
-                      </select>
-
+                    <div class="wrap-input100 validate-input">
+                      <input class="input100 has-val" placeholder="Card Holder Name" type="text" name="cardholder"
+                        required />
                       <span class="focus-input100"></span>
                     </div>
                   </div>
                 </div>
               </div>
+             
+              
+             
+              
 
-              <button type="submit" class="submit btn">
+              <button type="submit" class="submit btn" onclick="confirmation()">
                 Confirm Booking
               </button>
             </form>

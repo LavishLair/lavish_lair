@@ -14,8 +14,9 @@
     <header id="lavish-header-section">
       <div class="container">
         <div class="nav-header">
-          <h1 id="lavish-logo"><a href="index.html"><img src="images/logo/logo1-removebg.png" class="llLogo" alt=""></a></h1>
-          
+          <h1 id="lavish-logo"><a href="index.html"><img src="images/logo/logo1-removebg.png" class="llLogo" alt=""></a>
+          </h1>
+
           <nav id="lavish-menu-wrap" role="navigation">
             <ul class="header-menu" id="lavish-primary-menu">
               <li><a href="index.html">Home</a></li>
@@ -127,7 +128,7 @@
                   </div>
                 </div>
               </div>
-             
+
               <div class="col-md-12 field">
                 <div class="mb-3">
                   <div class="d-flex">
@@ -151,10 +152,10 @@
                   </div>
                 </div>
               </div>
-             
-              
-             
-              
+
+
+
+
 
               <input type="submit" value="Confirm Booking" class="btn btn-primary">
             </form>
@@ -175,16 +176,15 @@
   }
 </style>
 <script>
-  $( "#customer-info" ).submit(function( event ) {
+  $("#customer-info").submit(function (event) {
     confirm("Booking has been confirmed !!")
   });
 </script>
 
 <script>
   const form = document.getElementById('customer-info'); // get the form element
-  const submitBtn = form.querySelector('button[type="submit"]'); // get the submit button element
 
-  submitBtn.addEventListener('click', function (event) {
+  form.addEventListener('submit', function (event) {
     event.preventDefault(); // prevent form submission
 
     // get form values
@@ -227,8 +227,21 @@
     localStorage.setItem('formData', updatedFormDataString);
     const formDataStringD = localStorage.getItem('formData');
     console.log(formDataStringD);
+
+    // Display success message using SweetAlert
+    swal({
+      title: "Form submitted successfully!",
+      text: name + " - " + email,
+      icon: "success",
+    });
+
+    // Reset the form after submission
+    form.reset();
   });
 </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 
 <footer id="footer" class="lavish-bg-color">
   <div class="container">
@@ -238,7 +251,7 @@
           <p>
             <small>&copy; 2023 Lavish Lair hotels <br />
               All Rights Reserved. <br />
-              Designed by <b>Meenu Mathew</b></small>
+              Designed by <b>Lavish Lair</b></small>
           </p>
         </div>
       </div>

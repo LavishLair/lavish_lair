@@ -208,9 +208,7 @@
              
               
 
-              <button type="submit" class="submit btn" onclick="confirmation()">
-                Confirm Booking
-              </button>
+              <input type="submit" value="Confirm Booking" class="btn btn-primary">
             </form>
           </div>
         </div>
@@ -268,11 +266,15 @@
 </div>
 </div>
 </section>
-
-<script>
-  function confirmation() {
-    confirm("Booking has been confirmed !!")
+<style>
+  #lavish-header {
+    position: inherit !important;
   }
+</style>
+<script>
+  $( "#customer-info" ).submit(function( event ) {
+    confirm("Booking has been confirmed !!")
+  });
 </script>
 
 <script>
